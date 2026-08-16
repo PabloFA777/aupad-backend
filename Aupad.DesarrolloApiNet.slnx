@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Aupad.DesarrolloApiNet.Api/Aupad.DesarrolloApiNet.Api.csproj" />
+  <Project Path="Aupad.DesarrolloApiNet.Modelos/Aupad.DesarrolloApiNet.Modelos.csproj" />
+  <Project Path="Aupad.DesarrolloApiNet.Negocio/Aupad.DesarrolloApiNet.Negocio.csproj" />
+  <Project Path="Aupad.DesarrolloApiNet.Repositorio/Aupad.DesarrolloApiNet.Repositorio.csproj" />
+</Solution>
