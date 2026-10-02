@@ -4,6 +4,7 @@ namespace Aupad.DesarrolloApiNet.Modelos
     {
         public int Id { get; set; }
         public string Nombre { get; set; } = string.Empty;
+        public string? Descripcion { get; set; }
         public DateTime CreadoEn { get; set; } = DateTime.Now;
         public DateTime ActualizadoEn { get; set; } = DateTime.Now;
         public int? UsuarioCreoId { get; set; }

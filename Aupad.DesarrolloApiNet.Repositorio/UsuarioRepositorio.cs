@@ -21,7 +21,7 @@ namespace Aupad.DesarrolloApiNet.Repositorio
 
         public async Task<Usuario?> ObtenerPorIdAsync(int id)
         {
-            return await _context.Usuarios.FirstOrDefaultAsync(u => u.Id == id);
+    return await _context.Usuarios.AsNoTracking().FirstOrDefaultAsync(u => u.Id == id);
         }
 
         public async Task<Usuario?> ObtenerPorCorreoAsync(string correo)

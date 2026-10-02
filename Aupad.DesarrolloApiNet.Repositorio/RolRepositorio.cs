@@ -21,7 +21,7 @@ namespace Aupad.DesarrolloApiNet.Repositorio
 
         public async Task<Rol?> ObtenerPorIdAsync(int id)
         {
-            return await _context.Roles.FirstOrDefaultAsync(r => r.Id == id);
+            return await _context.Roles.AsNoTracking().FirstOrDefaultAsync(r => r.Id == id);
         }
 
         public async Task<Rol> CrearAsync(Rol item)

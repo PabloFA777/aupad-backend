@@ -102,6 +102,7 @@ namespace Aupad.DesarrolloApiNet.Repositorio.Data
                 entity.Property(e => e.Id).HasColumnName("id");
                 entity.Property(e => e.Nombre).HasColumnName("nombre").HasMaxLength(50).IsRequired();
                 entity.HasIndex(e => e.Nombre).IsUnique();
+                 entity.Property(e => e.Descripcion).HasColumnName("descripcion").HasMaxLength(255);
                 entity.Property(e => e.CreadoEn).HasColumnName("creado_en");
                 entity.Property(e => e.ActualizadoEn).HasColumnName("actualizado_en");
                 entity.Property(e => e.UsuarioCreoId).HasColumnName("usuario_creo_id");

@@ -12,7 +12,9 @@ using Aupad.DesarrolloApiNet.Api;
 var builder = WebApplication.CreateBuilder(args);
 
 // Configuración de controladores y Swagger
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+        options.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter()));
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
